@@ -16,4 +16,4 @@
 
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/X01AD_onclite.mk
+    $(LOCAL_DIR)/omni_X01AD.mk
