@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/onclite
+DEVICE_PATH := device/asus/X01AD
 
 # Architecture
 TARGET_ARCH := arm64
@@ -41,7 +41,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_serial_dm,0x78af000 firmware_class.path=/vendor/firmware_mnt/image androidboot.usbconfigfs=true loop.max_part=7
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_serial_dm,0x78af000 androidboot.usbconfigfs=true loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE :=  2048
@@ -63,13 +63,12 @@ BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
 # Partitions
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
-BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3758096384
+BOARD_CACHEIMAGE_PARTITION_SIZE := 367001600
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 24222088704
-BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4294967296
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 55423516160
+BOARD_VENDORIMAGE_PARTITION_SIZE := 838860800
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 
 # Recovery

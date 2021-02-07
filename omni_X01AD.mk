@@ -11,11 +11,11 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := omni_onclite
-PRODUCT_DEVICE := onclite
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 7
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_NAME := omni_X01AD
+PRODUCT_DEVICE := X01AD
+PRODUCT_BRAND := asus
+PRODUCT_MODEL := X01AD
+PRODUCT_MANUFACTURER := asus
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
